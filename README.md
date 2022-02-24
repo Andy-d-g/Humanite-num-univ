@@ -1,2 +1,1 @@
-# Humanite-num-univ
-Controle angular universite
+Project universitaire en angular

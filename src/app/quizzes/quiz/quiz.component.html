@@ -1,0 +1,13 @@
+<div class="card" *ngIf="quiz">
+    <h2>
+        <i *ngIf='quiz.theme == "Sport"' class="far fa-futbol"></i>
+        <i *ngIf='quiz.theme == "Actor"' class="fas fa-theater-masks"></i>
+        Name : {{quiz.name}}
+    </h2>
+    <span> Theme : {{quiz.theme}}  </span>
+    <br>
+    <span> Temps estimé : {{quiz.questions.length}}  </span>
+    <br>
+    <button class="button-card" (click)="selectQuiz()">Select</button>
+    <button class="button-card" (click)="deleteQuiz(this.quiz)">Delete</button>
+</div>
